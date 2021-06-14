@@ -158,4 +158,6 @@ class BokTelescopePar(TelescopePar):
         super(BokTelescopePar, self).__init__(name='BOK',
                                               longitude=111.6004,
                                               latitude=31.9629,
-                                              elevation=2071.1)
+                                              elevation=2071.1,
+                                              diameter=2.3,
+                                              eff_aperture=2.29)

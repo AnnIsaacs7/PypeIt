@@ -498,8 +498,10 @@ class Calibrations:
         illum_image_files, self.master_key_dict['flat'] = self._prep_calibrations('illumflat')
         pixflat_image_files, self.master_key_dict['flat'] = self._prep_calibrations('pixelflat')
 
-        masterframe_filename = masterframe.construct_file_name(flatfield.FlatImages,
-                                                           self.master_key_dict['flat'], master_dir=self.master_dir)
+        masterframe_filename = 'Users/Ann/Desktop/Research/Testing/NewFlatAllOnes.fits'
+        
+        #masterframe.construct_file_name(flatfield.FlatImages,
+        #                                                   self.master_key_dict['flat'], master_dir=self.master_dir)
         # The following if-elif-else does:
         #   1.  Try to load a MasterFrame (if reuse_masters is True).  If successful, pass it back
         #   2.  Build from scratch

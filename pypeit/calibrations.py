@@ -498,7 +498,8 @@ class Calibrations:
         illum_image_files, self.master_key_dict['flat'] = self._prep_calibrations('illumflat')
         pixflat_image_files, self.master_key_dict['flat'] = self._prep_calibrations('pixelflat')
 
-        masterframe_filename = 'Users/Ann/Desktop/Research/Testing/NewFlatAllOnes.fits'
+        masterframe_filename = masterframe.construct_file_name(flatfield.FlatImages,
+                                                           self.master_key_dict['flat'], master_dir=self.master_dir)
         
         #masterframe.construct_file_name(flatfield.FlatImages,
         #                                                   self.master_key_dict['flat'], master_dir=self.master_dir)
